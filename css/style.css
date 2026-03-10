@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Young Serif";
+  background-color: hsl(30, 54%, 90%);
+}
+
+.content {
+  padding: 2rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: 750px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+figure {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+.heading {
+  color: hsl(24, 5%, 18%);
+  font-size: 40px;
+}
+
+.text {
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5;
+  font-size: 20px;
+  justify-content: center;
+  font-family: "Outfit";
+  margin-bottom: 2rem;
+}
+
+.box {
+  padding: 1rem;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.time {
+  color: hsl(332, 51%, 32%);
+  font-size: 23px;
+  font-family: "Outfit";
+  font-weight: bold;
+  text-align: start;
+}
+
+.points {
+  line-height: 1.7;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 20px;
+
+  list-style-position: outside;
+}
+
+.points li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 15px;
+}
+
+.points li {
+  padding-left: 20px;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif";
+  font-size: 30px;
+  letter-spacing: 0.1rem;
+}
+
+.needs {
+  line-height: 1.7;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 20px;
+  text-align: start;
+  list-style-position: outside;
+  list-style-type: square;
+  padding-left: 50px;
+}
+
+.needs li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 13px;
+  font-family: "Outfit";
+  font-weight: bold;
+}
+
+.needs li {
+  padding-left: 20px;
+}
+
+.method {
+  line-height: 1.7;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  font-size: 20px;
+  list-style-position: outside;
+}
+
+.method li::marker {
+  color: hsl(14, 45%, 36%);
+  font-family: "Outfit";
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.method li {
+  padding-left: 20px;
+}
+
+.table {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Outfit";
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table td {
+  padding: 15px 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.table td:last-child {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.left {
+  text-align: center;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.right {
+  color: hsl(30, 10%, 34%);
+  text-align: start;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: hsl(30, 18%, 87%);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+  }
+  figure {
+    padding: 0;
+  }
+
+  .img {
+    border-radius: 0;
+    height: auto;
+  }
+}
